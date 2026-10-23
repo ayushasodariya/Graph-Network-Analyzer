@@ -19,9 +19,6 @@ An interactive web application for exploring fundamental graph algorithms and un
 - [Run Locally](#run-locally)
 - [Deploy on Render](#deploy-on-render)
 - [How to Use the App](#how-to-use-the-app)
-- [Limitations and Notes](#limitations-and-notes)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -187,10 +184,6 @@ Streamlit will print a local URL, commonly `http://localhost:8501`, which you ca
 
 ## Deploy on Render
 
-The live deployment is available at:
-
-**https://graph-network-analyzer.onrender.com/**
-
 To deploy your own copy:
 
 1. Push the project to a GitHub repository.
@@ -224,25 +217,3 @@ A `render.yaml` file is optional when these settings are configured in the dashb
 
 The exact input workflow depends on the controls currently implemented in `app.py`.
 
-## Limitations and Notes
-
-- Dijkstra's algorithm requires non-negative edge weights.
-- Floyd–Warshall is computationally expensive on large graphs because its running time grows cubically with the number of vertices.
-- Kruskal's algorithm is designed for undirected weighted graphs; disconnected input graphs produce a forest rather than a single spanning tree.
-- The complexity figures in this document describe common implementations. Check `algorithms.py` for the exact data structures and implementation details used in this project.
-- Keep local virtual environments (such as `.venv/`) and secret configuration files out of version control.
-
-## Contributing
-
-Contributions, suggestions, and bug reports are welcome. To contribute:
-
-1. Fork the repository.
-2. Create a branch for your change.
-3. Make and test your changes locally.
-4. Open a pull request describing the change.
-
-For bugs, include the steps to reproduce the issue and any relevant error output. Do not include credentials, tokens, or other secrets in issues.
-
-## License
-
-No license has been specified in this repository documentation yet. Unless a license is added to the repository, reuse and redistribution permissions may be limited. Add a `LICENSE` file if you want to publish the project under a specific open-source license.
